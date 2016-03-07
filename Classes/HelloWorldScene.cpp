@@ -1,5 +1,5 @@
 #include "HelloWorldScene.h"
-
+//////////////////////////
 USING_NS_CC;
 extern float g_fScaleFactor;
 
