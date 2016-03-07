@@ -2,7 +2,9 @@
 #include "HelloWorldScene.h"
 
 USING_NS_CC;
+float g_fScaleFactor;
 
+static cocos2d::Size screenResolutionSize = cocos2d::Size(1280, 720);
 static cocos2d::Size designResolutionSize = cocos2d::Size(480, 320);
 static cocos2d::Size smallResolutionSize = cocos2d::Size(480, 320);
 static cocos2d::Size mediumResolutionSize = cocos2d::Size(1024, 768);
@@ -40,9 +42,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto glview = director->getOpenGLView();
     if(!glview) {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) || (CC_TARGET_PLATFORM == CC_PLATFORM_MAC) || (CC_TARGET_PLATFORM == CC_PLATFORM_LINUX)
-        glview = GLViewImpl::createWithRect("MyFirst2dx", Rect(0, 0, designResolutionSize.width, designResolutionSize.height));
+        glview = GLViewImpl::createWithRect("First2DX", Rect(0, 0, screenResolutionSize.width, screenResolutionSize.height), 0.5);//designResolutionSize
 #else
-        glview = GLViewImpl::create("MyFirst2dx");
+        glview = GLViewImpl::create("First2DX");
 #endif
         director->setOpenGLView(glview);
     }
@@ -56,21 +58,37 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // Set the design resolution
     glview->setDesignResolutionSize(designResolutionSize.width, designResolutionSize.height, ResolutionPolicy::NO_BORDER);
     Size frameSize = glview->getFrameSize();
-    // if the frame's height is larger than the height of medium size.
-    if (frameSize.height > mediumResolutionSize.height)
-    {        
-        director->setContentScaleFactor(MIN(largeResolutionSize.height/designResolutionSize.height, largeResolutionSize.width/designResolutionSize.width));
-    }
-    // if the frame's height is larger than the height of small size.
-    else if (frameSize.height > smallResolutionSize.height)
-    {        
-        director->setContentScaleFactor(MIN(mediumResolutionSize.height/designResolutionSize.height, mediumResolutionSize.width/designResolutionSize.width));
-    }
-    // if the frame's height is smaller than the height of medium size.
-    else
-    {        
-        director->setContentScaleFactor(MIN(smallResolutionSize.height/designResolutionSize.height, smallResolutionSize.width/designResolutionSize.width));
-    }
+
+
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) || (CC_TARGET_PLATFORM == CC_PLATFORM_MAC) || (CC_TARGET_PLATFORM == CC_PLATFORM_LINUX)
+	director->setContentScaleFactor(MIN(screenResolutionSize.height / designResolutionSize.height, screenResolutionSize.width / designResolutionSize.width));
+#else
+	director->setContentScaleFactor(MIN(frameSize.height / designResolutionSize.height, frameSize.width / designResolutionSize.width));
+#endif
+	g_fScaleFactor = Director::getInstance()->getContentScaleFactor();
+
+
+
+
+
+
+
+
+    //// if the frame's height is larger than the height of medium size.
+    //if (frameSize.height > mediumResolutionSize.height)
+    //{        
+    //    director->setContentScaleFactor(MIN(largeResolutionSize.height/designResolutionSize.height, largeResolutionSize.width/designResolutionSize.width));
+    //}
+    //// if the frame's height is larger than the height of small size.
+    //else if (frameSize.height > smallResolutionSize.height)
+    //{        
+    //    director->setContentScaleFactor(MIN(mediumResolutionSize.height/designResolutionSize.height, mediumResolutionSize.width/designResolutionSize.width));
+    //}
+    //// if the frame's height is smaller than the height of medium size.
+    //else
+    //{        
+    //    director->setContentScaleFactor(MIN(smallResolutionSize.height/designResolutionSize.height, smallResolutionSize.width/designResolutionSize.width));
+    //}
 
     register_all_packages();
 
