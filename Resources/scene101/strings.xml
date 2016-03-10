@@ -3,8 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>chinese1</key>
-	<string>3D遊戲程式設計中文字型產生範例</string>
+	<string>中文字隨便啦</string>
   <key>chinese2</key>
-  <string>記得要設定成 unicode 方式儲存</string>
+  <string>記得Unicode隨便啦</string>
 </dict>
 </plist>

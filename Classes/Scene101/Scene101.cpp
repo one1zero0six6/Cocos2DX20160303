@@ -40,10 +40,19 @@ bool Scene101::init()
 	this->addChild(bkimage, 0);
 
 	// 自行增加 sprite 將 bean01.png 到螢幕正中間
+	Sprite *bean = Sprite::create("scene101/bean01.png");  // 使用 create 函式,給予檔名即可
+	bean->setScale(g_fScaleFactor); // 背景圖片設定成跟背景一樣大時，直接根據比例縮放即可
+	bean->setRotation(45.0);
+	bean->setPosition(330, 593); // 位置通常放置在螢幕正中間
+	bean->setAnchorPoint(Vec2(0.5, 0.0));
+
+	
+	this->addChild(bean, 1);
 
 
     // create and initialize a label, add a label shows "Scene 101"
 	auto label = Label::createWithTTF("Scene 101", "fonts/Marker Felt.ttf", 48);
+	//auto label = Label::createWithTTF("Scene 101", "fonts/Boa.ttf", 48);
 	label->setAlignment(cocos2d::TextHAlignment::CENTER); // 預設靠左對齊
 	label->setWidth(100);	// 設定每行文字的顯示寬度
     label->setPosition(Vec2(visibleSize.width - label->getContentSize().width/2-10, visibleSize.height - label->getContentSize().height/2-10));
@@ -54,7 +63,8 @@ bool Scene101::init()
 
 	//一般(非中文字)文字的顯示方式
 	//label1 = Label::createWithBMFont("fonts/couriernew48.fnt", "Scene 101");
-	auto label1 = Label::createWithBMFont("fonts/couriernew48.fnt", "Scene 101");
+	//auto label1 = Label::createWithBMFont("fonts/couriernew48.fnt", "Scene 101");
+	auto label1 = Label::createWithBMFont("fonts/boa.fnt", "Scene 101");////
 	label1->setColor(Color3B::WHITE);
 	label1->setPosition(Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height - label1->getContentSize().height));
 	this->addChild(label1, 1);
@@ -64,8 +74,8 @@ bool Scene101::init()
 	auto strings = FileUtils::getInstance()->getValueMapFromFile("scene101/strings.xml");
 	std::string str1 = strings["chinese1"].asString();
 	std::string str2 = strings["chinese2"].asString();
-	auto label2 = Label::createWithBMFont("fonts/hansans.fnt", str1);
-	auto label3 = Label::createWithBMFont("fonts/hansans.fnt", str2);
+	auto label2 = Label::createWithBMFont("fonts/bx.fnt", str1);
+	auto label3 = Label::createWithBMFont("fonts/bx.fnt", str2);//	auto label3 = Label::createWithBMFont("fonts/hansans.fnt", str2);
 	label2->setColor(Color3B(255,238,217));
 	label2->setPosition(Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height -80 - label->getContentSize().height));
 	this->addChild(label2, 1);

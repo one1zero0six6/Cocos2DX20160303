@@ -171,6 +171,8 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ResourceCompile Include="game.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\Resources\fonts\Boa_0.png" />
+    <Image Include="..\Resources\fonts\bx_0.png" />
     <Image Include="..\Resources\fonts\couriernew.png" />
     <Image Include="..\Resources\fonts\couriernew48.png" />
     <Image Include="..\Resources\fonts\hansans.png" />
@@ -203,8 +205,11 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\Resources\scene101\bmfontexample.txt" />
+    <Text Include="..\Resources\scene101\bx.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\Resources\fonts\Boa.fnt" />
+    <None Include="..\Resources\fonts\bx.fnt" />
     <None Include="..\Resources\fonts\couriernew.fnt" />
     <None Include="..\Resources\fonts\couriernew48.fnt" />
     <None Include="..\Resources\fonts\hansans.fnt" />

@@ -141,9 +141,18 @@
     <Image Include="..\Resources\fonts\hansans64_0.png">
       <Filter>resource\fonts</Filter>
     </Image>
+    <Image Include="..\Resources\fonts\Boa_0.png">
+      <Filter>resource\fonts</Filter>
+    </Image>
+    <Image Include="..\Resources\fonts\bx_0.png">
+      <Filter>resource\fonts</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\Resources\scene101\bmfontexample.txt">
+      <Filter>resource\scence101</Filter>
+    </Text>
+    <Text Include="..\Resources\scene101\bx.txt">
       <Filter>resource\scence101</Filter>
     </Text>
   </ItemGroup>
@@ -164,6 +173,12 @@
       <Filter>resource\fonts</Filter>
     </None>
     <None Include="..\Resources\fonts\hansans64.fnt">
+      <Filter>resource\fonts</Filter>
+    </None>
+    <None Include="..\Resources\fonts\Boa.fnt">
+      <Filter>resource\fonts</Filter>
+    </None>
+    <None Include="..\Resources\fonts\bx.fnt">
       <Filter>resource\fonts</Filter>
     </None>
   </ItemGroup>
