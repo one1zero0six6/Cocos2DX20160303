@@ -1,14 +1,19 @@
 #include "AppDelegate.h"
-#include "HelloWorldScene.h"
+#include "./Scene101/Scene101.h"
+//#include "./Scene101/Scene102.h"
+
+#define SceneTransition 1
 
 USING_NS_CC;
-float g_fScaleFactor;
 
-static cocos2d::Size screenResolutionSize = cocos2d::Size(1280, 720);
-static cocos2d::Size designResolutionSize = cocos2d::Size(480, 320);
+static cocos2d::Size screenResolutionSize = cocos2d::Size(1920, 1080);
+static cocos2d::Size designResolutionSize = cocos2d::Size(1280, 720);
 static cocos2d::Size smallResolutionSize = cocos2d::Size(480, 320);
 static cocos2d::Size mediumResolutionSize = cocos2d::Size(1024, 768);
 static cocos2d::Size largeResolutionSize = cocos2d::Size(2048, 1536);
+float g_fScaleFactor=0;
+
+
 
 AppDelegate::AppDelegate() {
 
@@ -42,9 +47,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto glview = director->getOpenGLView();
     if(!glview) {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) || (CC_TARGET_PLATFORM == CC_PLATFORM_MAC) || (CC_TARGET_PLATFORM == CC_PLATFORM_LINUX)
-        glview = GLViewImpl::createWithRect("First2DX", Rect(0, 0, screenResolutionSize.width, screenResolutionSize.height), 0.5);//designResolutionSize
+        glview = GLViewImpl::createWithRect("MyCocos2DX", Rect(0, 0, screenResolutionSize.width, screenResolutionSize.height),0.5f);
 #else
-        glview = GLViewImpl::create("First2DX");
+        glview = GLViewImpl::create("MyCocos2DX");
 #endif
         director->setOpenGLView(glview);
     }
@@ -53,13 +58,11 @@ bool AppDelegate::applicationDidFinishLaunching() {
     director->setDisplayStats(true);
 
     // set FPS. the default value is 1.0/60 if you don't call this
-    director->setAnimationInterval(1.0 / 60);
+    director->setAnimationInterval(1.0f / 60.0f);
 
     // Set the design resolution
     glview->setDesignResolutionSize(designResolutionSize.width, designResolutionSize.height, ResolutionPolicy::NO_BORDER);
     Size frameSize = glview->getFrameSize();
-
-
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) || (CC_TARGET_PLATFORM == CC_PLATFORM_MAC) || (CC_TARGET_PLATFORM == CC_PLATFORM_LINUX)
 	director->setContentScaleFactor(MIN(screenResolutionSize.height / designResolutionSize.height, screenResolutionSize.width / designResolutionSize.width));
 #else
@@ -67,37 +70,21 @@ bool AppDelegate::applicationDidFinishLaunching() {
 #endif
 	g_fScaleFactor = Director::getInstance()->getContentScaleFactor();
 
-
-
-
-
-
-
-
-    //// if the frame's height is larger than the height of medium size.
-    //if (frameSize.height > mediumResolutionSize.height)
-    //{        
-    //    director->setContentScaleFactor(MIN(largeResolutionSize.height/designResolutionSize.height, largeResolutionSize.width/designResolutionSize.width));
-    //}
-    //// if the frame's height is larger than the height of small size.
-    //else if (frameSize.height > smallResolutionSize.height)
-    //{        
-    //    director->setContentScaleFactor(MIN(mediumResolutionSize.height/designResolutionSize.height, mediumResolutionSize.width/designResolutionSize.width));
-    //}
-    //// if the frame's height is smaller than the height of medium size.
-    //else
-    //{        
-    //    director->setContentScaleFactor(MIN(smallResolutionSize.height/designResolutionSize.height, smallResolutionSize.width/designResolutionSize.width));
-    //}
-
     register_all_packages();
 
     // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
 
-    // run
-    director->runWithScene(scene);
-
+#if SceneTransition == 0
+	auto scene = Scene101::createScene();
+	director->runWithScene(scene);
+#elif SceneTransition == 1
+	auto scene = TransitionMoveInL::create(0.6f, Scene101::createScene());
+	director->runWithScene(scene);
+#else
+	auto scene = TransitionZoomFlipX::create(0.6f, Scene102::createScene());
+	director->runWithScene(scene);
+#endif
+//	Director::getInstance()->replaceScene(scene);
     return true;
 }
 

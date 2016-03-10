@@ -10,6 +10,15 @@
     <Filter Include="src">
       <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
     </Filter>
+    <Filter Include="resource\scence101">
+      <UniqueIdentifier>{46cbbcbc-4217-4565-973a-575e98dbf806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\fonts">
+      <UniqueIdentifier>{fe2c4d40-18f7-45f1-b2d4-95f9bed085ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\scence101">
+      <UniqueIdentifier>{1c0fcad5-bb8e-471b-85ab-e7ee67a23a6a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -20,6 +29,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\HelloWorldScene.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene101\Scene101.cpp">
+      <Filter>src\scence101</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -32,10 +44,143 @@
     <ClInclude Include="..\Classes\HelloWorldScene.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Scene101\Scene101.h">
+      <Filter>src\scence101</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="game.rc">
       <Filter>resource</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\scene101\bean01.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\bean02.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\bean03.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\bean04.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\bg.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\cuber01.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\cuber02.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\cuber03.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\cuber04.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\cuber05.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\cuber06.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\cuber07.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\cuber08.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\cuberbtn1.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\cuberbtn2.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\cuberbtn3.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\replaybtn.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\returnbtn.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\s101bgimg.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\s101line01.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\s101line02.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\scene101.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\sr_f_triangle.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\sr_line1.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\scene101\sr_line2.png">
+      <Filter>resource\scence101</Filter>
+    </Image>
+    <Image Include="..\Resources\fonts\couriernew.png">
+      <Filter>resource\fonts</Filter>
+    </Image>
+    <Image Include="..\Resources\fonts\couriernew48.png">
+      <Filter>resource\fonts</Filter>
+    </Image>
+    <Image Include="..\Resources\fonts\hansans.png">
+      <Filter>resource\fonts</Filter>
+    </Image>
+    <Image Include="..\Resources\fonts\hansans64_0.png">
+      <Filter>resource\fonts</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Resources\scene101\bmfontexample.txt">
+      <Filter>resource\scence101</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\scene101\scene101.plist">
+      <Filter>resource\scence101</Filter>
+    </None>
+    <None Include="..\Resources\scene101\scene101.tps">
+      <Filter>resource\scence101</Filter>
+    </None>
+    <None Include="..\Resources\fonts\couriernew.fnt">
+      <Filter>resource\fonts</Filter>
+    </None>
+    <None Include="..\Resources\fonts\couriernew48.fnt">
+      <Filter>resource\fonts</Filter>
+    </None>
+    <None Include="..\Resources\fonts\hansans.fnt">
+      <Filter>resource\fonts</Filter>
+    </None>
+    <None Include="..\Resources\fonts\hansans64.fnt">
+      <Filter>resource\fonts</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Resources\scene101\strings.xml">
+      <Filter>resource\scence101</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\Resources\fonts\arial.ttf">
+      <Filter>resource\fonts</Filter>
+    </Font>
+    <Font Include="..\Resources\fonts\HKYuanMini.ttf">
+      <Filter>resource\fonts</Filter>
+    </Font>
+    <Font Include="..\Resources\fonts\Marker Felt.ttf">
+      <Filter>resource\fonts</Filter>
+    </Font>
   </ItemGroup>
 </Project>
