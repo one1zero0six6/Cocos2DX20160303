@@ -7,7 +7,7 @@
             <key>bean01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{910,0},{125,199}}</string>
+                <string>{{607,0},{125,199}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -20,7 +20,7 @@
             <key>bean02.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1160,0},{125,199}}</string>
+                <string>{{857,0},{125,199}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -33,7 +33,7 @@
             <key>bean03.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1035,0},{125,199}}</string>
+                <string>{{732,0},{125,199}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -46,7 +46,7 @@
             <key>bean04.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1285,0},{125,199}}</string>
+                <string>{{982,0},{125,199}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -72,7 +72,7 @@
             <key>cuber01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{0,226},{241,226}}</string>
+                <string>{{1589,0},{241,226}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -85,7 +85,7 @@
             <key>cuber02.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{482,226},{241,226}}</string>
+                <string>{{241,226},{241,226}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -98,7 +98,7 @@
             <key>cuber03.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{241,226},{241,226}}</string>
+                <string>{{0,226},{241,226}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -111,7 +111,7 @@
             <key>cuber04.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{964,226},{241,226}}</string>
+                <string>{{723,226},{241,226}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -124,7 +124,7 @@
             <key>cuber05.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1205,226},{241,226}}</string>
+                <string>{{964,226},{241,226}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -137,7 +137,7 @@
             <key>cuber06.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{723,226},{241,226}}</string>
+                <string>{{482,226},{241,226}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -150,7 +150,7 @@
             <key>cuber07.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1410,0},{241,226}}</string>
+                <string>{{1107,0},{241,226}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -163,7 +163,7 @@
             <key>cuber08.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1651,0},{241,226}}</string>
+                <string>{{1348,0},{241,226}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -176,41 +176,41 @@
             <key>cuberbtn1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{319,0},{197,178}}</string>
+                <string>{{247,0},{96,87}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{197,178}}</string>
+                <string>{{0,0},{96,87}}</string>
                 <key>sourceSize</key>
-                <string>{197,178}</string>
+                <string>{96,87}</string>
             </dict>
             <key>cuberbtn2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{516,0},{197,178}}</string>
+                <string>{{343,0},{96,87}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{197,178}}</string>
+                <string>{{0,0},{96,87}}</string>
                 <key>sourceSize</key>
-                <string>{197,178}</string>
+                <string>{96,87}</string>
             </dict>
             <key>cuberbtn3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{713,0},{197,178}}</string>
+                <string>{{151,0},{96,87}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{197,178}}</string>
+                <string>{{0,0},{96,87}}</string>
                 <key>sourceSize</key>
-                <string>{197,178}</string>
+                <string>{96,87}</string>
             </dict>
             <key>replaybtn.png</key>
             <dict>
@@ -280,7 +280,7 @@
             <key>sr_f_triangle.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{151,0},{168,144}}</string>
+                <string>{{439,0},{168,144}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -326,7 +326,7 @@
             <key>size</key>
             <string>{2048,2048}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:849a39e52932fad01fb1e29907ab463b:bb88f2d8109f91215f1b75c4dd53000f:9a04fb8b08cf709da36490be6b44d9f8$</string>
+            <string>$TexturePacker:SmartUpdate:23a4bb6543a2447a7fdaeeb5832efa2f:6c13a4e70ba26bdc9420dcf2a8d6c215:9a04fb8b08cf709da36490be6b44d9f8$</string>
             <key>textureFileName</key>
             <string>scene101.png</string>
         </dict>

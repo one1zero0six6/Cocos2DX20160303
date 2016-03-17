@@ -27,9 +27,6 @@
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\Scene101\Scene101.cpp">
       <Filter>src\scence101</Filter>
     </ClCompile>
@@ -39,9 +36,6 @@
       <Filter>win32</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\AppDelegate.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\HelloWorldScene.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Scene101\Scene101.h">
@@ -129,22 +123,10 @@
     <Image Include="..\Resources\scene101\sr_line2.png">
       <Filter>resource\scence101</Filter>
     </Image>
-    <Image Include="..\Resources\fonts\couriernew.png">
+    <Image Include="..\Resources\fonts\couriernew32_0.png">
       <Filter>resource\fonts</Filter>
     </Image>
-    <Image Include="..\Resources\fonts\couriernew48.png">
-      <Filter>resource\fonts</Filter>
-    </Image>
-    <Image Include="..\Resources\fonts\hansans.png">
-      <Filter>resource\fonts</Filter>
-    </Image>
-    <Image Include="..\Resources\fonts\hansans64_0.png">
-      <Filter>resource\fonts</Filter>
-    </Image>
-    <Image Include="..\Resources\fonts\Boa_0.png">
-      <Filter>resource\fonts</Filter>
-    </Image>
-    <Image Include="..\Resources\fonts\bx_0.png">
+    <Image Include="..\Resources\fonts\hansans48_0.png">
       <Filter>resource\fonts</Filter>
     </Image>
   </ItemGroup>
@@ -163,22 +145,10 @@
     <None Include="..\Resources\scene101\scene101.tps">
       <Filter>resource\scence101</Filter>
     </None>
-    <None Include="..\Resources\fonts\couriernew.fnt">
+    <None Include="..\Resources\fonts\couriernew32.fnt">
       <Filter>resource\fonts</Filter>
     </None>
-    <None Include="..\Resources\fonts\couriernew48.fnt">
-      <Filter>resource\fonts</Filter>
-    </None>
-    <None Include="..\Resources\fonts\hansans.fnt">
-      <Filter>resource\fonts</Filter>
-    </None>
-    <None Include="..\Resources\fonts\hansans64.fnt">
-      <Filter>resource\fonts</Filter>
-    </None>
-    <None Include="..\Resources\fonts\Boa.fnt">
-      <Filter>resource\fonts</Filter>
-    </None>
-    <None Include="..\Resources\fonts\bx.fnt">
+    <None Include="..\Resources\fonts\hansans48.fnt">
       <Filter>resource\fonts</Filter>
     </None>
   </ItemGroup>

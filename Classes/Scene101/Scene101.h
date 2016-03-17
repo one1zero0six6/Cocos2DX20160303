@@ -9,10 +9,15 @@ private:
 	cocos2d::Sprite *cuberbtn;
 	cocos2d::Sprite *replaybtn;
 	cocos2d::Sprite *returnbtn;
+	cocos2d::Sprite *redbean;/////////////////////////
+	cocos2d::Rect    rectBean;//////////////////////
 	cocos2d::Rect    rectCuber;
 	cocos2d::Rect    rectReplay;
 	cocos2d::Rect    rectReturn;
-//	cocos2d::Label *label1;
+
+	bool b_Beantouch;
+	//Vec2 v_TouchMoveDirect;
+
 	int  _sceneno;
 	char _cSceneNo[10];
 
