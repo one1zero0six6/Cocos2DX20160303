@@ -32,6 +32,7 @@ bool Scene101::init()
 	Size visibleSize = Director::getInstance()->getVisibleSize();
 	Vec2 origin = Director::getInstance()->getVisibleOrigin();
 	Size size;
+	v_TouchMoveDirect = Vec2(0, 0);
 
 	//以 Sprite 作為背景
 	Sprite *bkimage = Sprite::create(HOME_BACKGROUND);  // 使用 create 函式,給予檔名即可
@@ -136,7 +137,10 @@ bool  Scene101::onTouchBegan(cocos2d::Touch *pTouch, cocos2d::Event *pEvent)//�
 	}
 	////////////////////redbean//rectBean
 	if (rectBean.containsPoint(touchLoc)) {
+		Point pos;
 		b_Beantouch = true;
+		pos = redbean->getPosition();
+		v_TouchMoveDirect = Vec2(pos .x- touchLoc.x, pos.y - touchLoc.y);//touchLoc>redbean
 	}
 	//////////////////////
 	if (rectReplay.containsPoint(touchLoc)) {
@@ -155,9 +159,12 @@ void  Scene101::onTouchMoved(cocos2d::Touch *pTouch, cocos2d::Event *pEvent) //�
 	Point touchLoc = pTouch->getLocation();//v_TouchMoveDirect
 	if (b_Beantouch) {
 		Size size;
-		this->redbean->setPosition(touchLoc);
+		Point pos;
+		this->redbean->setPosition(Vec2(touchLoc.x+v_TouchMoveDirect.x, touchLoc.y + v_TouchMoveDirect.y));//豆豆圖移動
+		pos = redbean->getPosition();
 		size = redbean->getContentSize();
-		this->rectBean = Rect(touchLoc.x - size.width / 2, touchLoc.y - size.height / 2, size.width, size.height);//touchLoc
+		this->rectBean = Rect(pos.x - size.width / 2, pos.y - size.height / 2, size.width, size.height);//touchLoc
+		//豆豆觸控跟著移動
 	}
 
 }

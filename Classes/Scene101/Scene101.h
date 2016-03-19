@@ -15,8 +15,10 @@ private:
 	cocos2d::Rect    rectReplay;
 	cocos2d::Rect    rectReturn;
 
-	bool b_Beantouch;
-	//Vec2 v_TouchMoveDirect;
+	cocos2d::Point v_TouchMoveDirect;
+	bool b_Beantouch;//¨§¨§³Q¸Iflag
+	
+	//POINT v_TouchMoveDirect;
 
 	int  _sceneno;
 	char _cSceneNo[10];
