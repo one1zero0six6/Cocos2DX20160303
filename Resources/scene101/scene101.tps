@@ -4,9 +4,9 @@
         <key>fileFormatVersion</key>
         <int>3</int>
         <key>texturePackerVersion</key>
-        <string>4.0.2</string>
+        <string>4.1.0</string>
         <key>fileName</key>
-        <string>H:/GitHub/3DGameProgramming/Resources/scene101/scene101.tps</string>
+        <string>D:/Desktop/abwCOCOS2DX/Cocos2DX20160303/Resources/scene101/scene101.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -187,9 +187,42 @@
             <int>200</int>
             <key>heuristicMask</key>
             <false/>
-            <key>pivotPoint</key>
-            <enum type="SpriteSettings::PivotPoint">Center</enum>
+            <key>defaultPivotPoint</key>
+            <point_f>0.5,0.5</point_f>
+            <key>writePivotPoints</key>
+            <false/>
         </struct>
+        <key>individualSpriteSettings</key>
+        <map type="IndividualSpriteSettingsMap">
+            <key type="filename">bean01.png</key>
+            <key type="filename">bean02.png</key>
+            <key type="filename">bean03.png</key>
+            <key type="filename">bean04.png</key>
+            <key type="filename">bg.png</key>
+            <key type="filename">cuber01.png</key>
+            <key type="filename">cuber02.png</key>
+            <key type="filename">cuber03.png</key>
+            <key type="filename">cuber04.png</key>
+            <key type="filename">cuber05.png</key>
+            <key type="filename">cuber06.png</key>
+            <key type="filename">cuber07.png</key>
+            <key type="filename">cuber08.png</key>
+            <key type="filename">cuberbtn1.png</key>
+            <key type="filename">cuberbtn2.png</key>
+            <key type="filename">cuberbtn3.png</key>
+            <key type="filename">replaybtn.png</key>
+            <key type="filename">returnbtn.png</key>
+            <key type="filename">s101bgimg.png</key>
+            <key type="filename">s101line01.png</key>
+            <key type="filename">s101line02.png</key>
+            <key type="filename">sr_f_triangle.png</key>
+            <key type="filename">sr_line1.png</key>
+            <key type="filename">sr_line2.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+            </struct>
+        </map>
         <key>fileList</key>
         <array>
             <filename>bean01.png</filename>
@@ -208,14 +241,14 @@
             <filename>cuberbtn1.png</filename>
             <filename>cuberbtn2.png</filename>
             <filename>cuberbtn3.png</filename>
+            <filename>replaybtn.png</filename>
+            <filename>returnbtn.png</filename>
             <filename>s101bgimg.png</filename>
             <filename>s101line01.png</filename>
             <filename>s101line02.png</filename>
             <filename>sr_f_triangle.png</filename>
             <filename>sr_line1.png</filename>
             <filename>sr_line2.png</filename>
-            <filename>returnbtn.png</filename>
-            <filename>replaybtn.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

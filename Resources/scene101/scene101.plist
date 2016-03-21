@@ -321,12 +321,16 @@
         <dict>
             <key>format</key>
             <integer>2</integer>
+            <key>pixelFormat</key>
+            <string>RGBA8888</string>
+            <key>premultiplyAlpha</key>
+            <false/>
             <key>realTextureFileName</key>
             <string>scene101.png</string>
             <key>size</key>
             <string>{2048,2048}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:23a4bb6543a2447a7fdaeeb5832efa2f:6c13a4e70ba26bdc9420dcf2a8d6c215:9a04fb8b08cf709da36490be6b44d9f8$</string>
+            <string>$TexturePacker:SmartUpdate:ee97a9355951a53ab902c80893db9c08:6c13a4e70ba26bdc9420dcf2a8d6c215:9a04fb8b08cf709da36490be6b44d9f8$</string>
             <key>textureFileName</key>
             <string>scene101.png</string>
         </dict>
