@@ -90,7 +90,7 @@ bool Scene101::init()
 	// add Return Button//redbean
 	this->redbean = Sprite::create("scene101/bean01.png");
 	size = redbean->getContentSize();
-	this->redbean->setPosition(Vec2(origin.x + size.width / 2 + 50, origin.y + visibleSize.height - size.height / 2 -50));
+	this->redbean->setPosition(Vec2(origin.x + size.width / 2 + 50, origin.y + visibleSize.height - size.height / 2 - 50));
 	pos = redbean->getPosition();
 	this->rectBean = Rect(pos.x - size.width / 2, pos.y - size.height / 2, size.width, size.height);
 	this->addChild(redbean, 1);
@@ -140,7 +140,7 @@ bool  Scene101::onTouchBegan(cocos2d::Touch *pTouch, cocos2d::Event *pEvent)//�
 		Point pos;
 		b_Beantouch = true;
 		pos = redbean->getPosition();
-		v_TouchMoveDirect = Vec2(pos .x- touchLoc.x, pos.y - touchLoc.y);//touchLoc>redbean
+		v_TouchMoveDirect = Vec2(pos.x - touchLoc.x, pos.y - touchLoc.y);//touchLoc>redbean
 	}
 	//////////////////////
 	if (rectReplay.containsPoint(touchLoc)) {
@@ -160,11 +160,11 @@ void  Scene101::onTouchMoved(cocos2d::Touch *pTouch, cocos2d::Event *pEvent) //�
 	if (b_Beantouch) {
 		Size size;
 		Point pos;
-		this->redbean->setPosition(Vec2(touchLoc.x+v_TouchMoveDirect.x, touchLoc.y + v_TouchMoveDirect.y));//豆豆圖移動
+		this->redbean->setPosition(Vec2(touchLoc.x + v_TouchMoveDirect.x, touchLoc.y + v_TouchMoveDirect.y));//豆豆圖移動
 		pos = redbean->getPosition();
 		size = redbean->getContentSize();
 		this->rectBean = Rect(pos.x - size.width / 2, pos.y - size.height / 2, size.width, size.height);//touchLoc
-		//豆豆觸控跟著移動
+																										//豆豆觸控跟著移動
 	}
 
 }

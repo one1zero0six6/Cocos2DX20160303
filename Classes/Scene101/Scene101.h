@@ -1,4 +1,4 @@
-#ifndef __SCENE_101_H__
+ï»¿#ifndef __SCENE_101_H__
 #define __SCENE_101_H__
 
 #include "cocos2d.h"
@@ -16,27 +16,27 @@ private:
 	cocos2d::Rect    rectReturn;
 
 	cocos2d::Point v_TouchMoveDirect;
-	bool b_Beantouch;//¨§¨§³Q¸Iflag
-	
-	//POINT v_TouchMoveDirect;
+	bool b_Beantouch;//
+
+					 //POINT v_TouchMoveDirect;
 
 	int  _sceneno;
 	char _cSceneNo[10];
 
 public:
-    static cocos2d::Scene* createScene();
+	static cocos2d::Scene* createScene();
 
-    virtual bool init();
+	virtual bool init();
 	void doStep(float dt);
 
-	//Ä²¸I
+	//Ã„Â²Â¸I
 	cocos2d::EventListenerTouchOneByOne *_listener1;
-	bool onTouchBegan(cocos2d::Touch *pTouch, cocos2d::Event *pEvent); //Ä²¸I¶}©l¨Æ¥ó
-	void onTouchMoved(cocos2d::Touch *pTouch, cocos2d::Event *pEvent); //Ä²¸I²¾°Ê¨Æ¥ó
-	void onTouchEnded(cocos2d::Touch *pTouch, cocos2d::Event *pEvent); //Ä²¸Iµ²§ô¨Æ¥ó 
-    
-    // implement the "static create()" method manually
-    CREATE_FUNC(Scene101);
+	bool onTouchBegan(cocos2d::Touch *pTouch, cocos2d::Event *pEvent); //
+	void onTouchMoved(cocos2d::Touch *pTouch, cocos2d::Event *pEvent); //
+	void onTouchEnded(cocos2d::Touch *pTouch, cocos2d::Event *pEvent); //
+
+																	   // implement the "static create()" method manually
+	CREATE_FUNC(Scene101);
 };
 
 #endif // __SCENE_101_H__

@@ -146,11 +146,13 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="..\Classes\Scene101\Scene101.cpp" />
+    <ClCompile Include="..\Classes\Scene101\Scene102.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="..\Classes\Scene101\Scene101.h" />
+    <ClInclude Include="..\Classes\Scene101\Scene102.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>
@@ -175,7 +177,33 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <Image Include="..\Resources\scene101\bean02.png" />
     <Image Include="..\Resources\scene101\bean03.png" />
     <Image Include="..\Resources\scene101\bean04.png" />
+    <Image Include="..\Resources\scene101\bean1_01.png" />
+    <Image Include="..\Resources\scene101\bean1_02.png" />
+    <Image Include="..\Resources\scene101\bean1_03.png" />
+    <Image Include="..\Resources\scene101\bean1_04.png" />
+    <Image Include="..\Resources\scene101\bean1_05.png" />
+    <Image Include="..\Resources\scene101\bean1_jump01.png" />
+    <Image Include="..\Resources\scene101\bean1_jump02.png" />
+    <Image Include="..\Resources\scene101\bean1_jump03.png" />
+    <Image Include="..\Resources\scene101\bean1_jump04.png" />
+    <Image Include="..\Resources\scene101\bean1_wave01.png" />
+    <Image Include="..\Resources\scene101\bean1_wave02.png" />
+    <Image Include="..\Resources\scene101\bean1_wave03.png" />
+    <Image Include="..\Resources\scene101\bean2_01.png" />
+    <Image Include="..\Resources\scene101\bean2_02.png" />
+    <Image Include="..\Resources\scene101\bean2_03.png" />
+    <Image Include="..\Resources\scene101\bean2_04.png" />
+    <Image Include="..\Resources\scene101\bean2_05.png" />
     <Image Include="..\Resources\scene101\bg.png" />
+    <Image Include="..\Resources\scene101\ceyes1.png" />
+    <Image Include="..\Resources\scene101\ceyes2.png" />
+    <Image Include="..\Resources\scene101\ceyes3.png" />
+    <Image Include="..\Resources\scene101\checkbox.png" />
+    <Image Include="..\Resources\scene101\checkboxon.png" />
+    <Image Include="..\Resources\scene101\checkoff.png" />
+    <Image Include="..\Resources\scene101\checkon.png" />
+    <Image Include="..\Resources\scene101\cmouth1.png" />
+    <Image Include="..\Resources\scene101\cmouth2.png" />
     <Image Include="..\Resources\scene101\cuber01.png" />
     <Image Include="..\Resources\scene101\cuber02.png" />
     <Image Include="..\Resources\scene101\cuber03.png" />
@@ -187,33 +215,70 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <Image Include="..\Resources\scene101\cuberbtn1.png" />
     <Image Include="..\Resources\scene101\cuberbtn2.png" />
     <Image Include="..\Resources\scene101\cuberbtn3.png" />
+    <Image Include="..\Resources\scene101\cubershadow.png" />
+    <Image Include="..\Resources\scene101\flame1_01.png" />
+    <Image Include="..\Resources\scene101\flame1_02.png" />
+    <Image Include="..\Resources\scene101\flame1_03.png" />
+    <Image Include="..\Resources\scene101\flame1_04.png" />
+    <Image Include="..\Resources\scene101\flame1_05.png" />
+    <Image Include="..\Resources\scene101\flame1_06.png" />
+    <Image Include="..\Resources\scene101\flame1_07.png" />
+    <Image Include="..\Resources\scene101\flame2_01.png" />
+    <Image Include="..\Resources\scene101\flame2_02.png" />
+    <Image Include="..\Resources\scene101\flame2_03.png" />
+    <Image Include="..\Resources\scene101\flame2_04.png" />
+    <Image Include="..\Resources\scene101\flame2_05.png" />
+    <Image Include="..\Resources\scene101\flame2_06.png" />
+    <Image Include="..\Resources\scene101\flame2_07.png" />
+    <Image Include="..\Resources\scene101\flame2_08.png" />
+    <Image Include="..\Resources\scene101\flame2_09.png" />
+    <Image Include="..\Resources\scene101\flame2_10.png" />
+    <Image Include="..\Resources\scene101\flame2_11.png" />
+    <Image Include="..\Resources\scene101\flame2_12.png" />
+    <Image Include="..\Resources\scene101\flame2_13.png" />
+    <Image Include="..\Resources\scene101\loadingbar.png" />
     <Image Include="..\Resources\scene101\replaybtn.png" />
     <Image Include="..\Resources\scene101\returnbtn.png" />
     <Image Include="..\Resources\scene101\s101bgimg.png" />
     <Image Include="..\Resources\scene101\s101line01.png" />
     <Image Include="..\Resources\scene101\s101line02.png" />
     <Image Include="..\Resources\scene101\scene101.png" />
-    <Image Include="..\Resources\scene101\sr_f_triangle.png" />
+    <Image Include="..\Resources\scene101\scene101bg.png" />
+    <Image Include="..\Resources\scene101\sliderballnormal.png" />
+    <Image Include="..\Resources\scene101\sliderballpressed.png" />
+    <Image Include="..\Resources\scene101\sliderProgress.png" />
+    <Image Include="..\Resources\scene101\sliderTrack.png" />
     <Image Include="..\Resources\scene101\sr_line1.png" />
     <Image Include="..\Resources\scene101\sr_line2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="..\Resources\scene101\bmfontexample.txt" />
-    <Text Include="..\Resources\scene101\bx.txt" />
+    <Image Include="..\Resources\scene101\triblock.png" />
+    <Image Include="..\Resources\scene101\triouter.png" />
+    <Image Include="..\Resources\scene101\trishadow.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Resources\fonts\couriernew32.fnt" />
     <None Include="..\Resources\fonts\hansans48.fnt" />
     <None Include="..\Resources\scene101\scene101.plist" />
     <None Include="..\Resources\scene101\scene101.tps" />
-  </ItemGroup>
-  <ItemGroup>
-    <Xml Include="..\Resources\scene101\strings.xml" />
+    <None Include="..\Resources\scene101\scene101bg.plist" />
+    <None Include="..\Resources\scene101\scene101bg.tps" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="..\Resources\fonts\arial.ttf" />
     <Font Include="..\Resources\fonts\HKYuanMini.ttf" />
     <Font Include="..\Resources\fonts\Marker Felt.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\Resources\scene101\arrivalsfinalsound.mp3" />
+    <Media Include="..\Resources\scene101\gain point.mp3" />
+    <Media Include="..\Resources\scene101\running.mp3" />
+    <Media Include="..\Resources\scene101\SR_bg.mp3" />
+    <Media Include="..\Resources\scene101\thinking cloud.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Resources\scene101\bmfontexample.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Resources\scene101\strings.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
